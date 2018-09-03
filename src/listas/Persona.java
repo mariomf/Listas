@@ -11,6 +11,20 @@ package listas;
  */
 public class Persona {
 
+    private char inicial;
+    private double peso;
+    private int edad;
+    private double altura;
+    
+    public Persona(){}
+    
+    public Persona(char inicial, double peso, int edad, double altura){
+        this.inicial = inicial;
+        this.peso = peso;
+        this.edad = edad;
+        this.altura = altura;
+    }
+    
     /**
      * @return the inicial
      */
@@ -64,19 +78,6 @@ public class Persona {
      * @param altura the altura to set
      */
     public void setAltura(double altura) {
-        this.altura = altura;
-    }
-    private char inicial;
-    private double peso;
-    private int edad;
-    private double altura;
-    
-    public Persona(){}
-    
-    public Persona(char inicial, double peso, int edad, double altura){
-        this.inicial = inicial;
-        this.peso = peso;
-        this.edad = edad;
         this.altura = altura;
     }
 }

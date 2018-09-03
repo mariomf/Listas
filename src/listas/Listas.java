@@ -17,5 +17,22 @@ public class Listas {
     public static void main(String[] args) {
         // TODO code application logic here
     }
+    private Nodo inicio;
+    public Listas(){
+        inicio = null;
+    }
+    
+    public void agregar(Persona persona){
+        Nodo nuevo = new Nodo();
+        nuevo.persona = persona;
+        
+        if (inicio == null) {
+            nuevo.siguiente = null;
+            inicio = nuevo;
+        }else{
+            nuevo.siguiente = inicio;
+            inicio = nuevo;
+        }
+    }
     
 }
